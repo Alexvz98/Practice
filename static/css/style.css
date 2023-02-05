@@ -1,9 +1,10 @@
 body{
-    background: rgb(245, 236, 236);
+    background: linear-gradient(107.66deg, #FEF759 38.95%, rgba(251, 102, 39, 0.7) 100.38%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin: 0;
     padding: 0;
-    background-image: url(/static/53.jpg);
-
+    height: 760px;
+    font-family: Verdana;
 }
 .menu{
     display: flex;
@@ -14,16 +15,53 @@ body{
     margin-top: 0;
     font-size: 17px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: aliceblue;
+    color: black;
+}
+.menu a{
+    font-weight: bold;
 }
 
+ul{
+    list-style: none;
+    padding: 0;
+    
+}
+p>a{
+    text-decoration: none;
+    color: black
+}
+
+li>p, li div{
+    border: 1px solid #CCC;
+    padding: 10px 20px;
+}
+
+p.title{
+    margin: 0;
+    font-weight: bold;
+    background: gold;
+}
+
+p.title a{
+    display: block;
+}
+
+p.title:hover{
+    background: orange;
+}
+
+.annonce{
+    margin-top: -1px;
+    background: #FFF;
+    margin-bottom: 40px;
+}
 
 .container{
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
-    color: aliceblue;
+    color: black;
 
 }
 
@@ -45,13 +83,13 @@ body{
     font-size: 20px;
     font-weight: bold;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: aliceblue;
+    color: black;
 }
 
 .text-delivery-ul{
     font-size: 14px;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    color: aliceblue;
+    color: black;
 }
 .content{
     text-align: center;
@@ -69,28 +107,20 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-.news-items{
-    width: 98%;
-    display: flex; /*Выстраивание блочных элементов в ряд */
-    justify-content: space-between;/*Выровнять элементы по ширине */
-    flex-wrap: wrap; /*Перенос блока на новую строку, если не помещается в текущей */
-    padding-top: 50px;
 
+.post {
+    width: 98%;
 }
-.item{
-    width: 44%;
-    border: 1px solid #ffffff;
-    padding-bottom: 100px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
-    border-radius: 10px;
-    margin: 10px; /*Внутррении отступ */
+
+.post-item{
+    width: 33%;
+    display:inline-block;
+    justify-content: space-between;
+    vertical-align: top;
 }
-.item-img{
+li p{
     text-align: center;
-    font-size: 18px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: rgb(145, 252, 252);
-    
+}
+h2{
+    text-align: center;
 }
